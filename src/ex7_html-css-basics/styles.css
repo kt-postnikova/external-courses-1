@@ -1,0 +1,23 @@
+h1 {
+  background-color: #ADD8E6;
+  text-align: center;
+}
+
+h2 {
+  background-color: rgb(245, 222, 179);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #FFE4E1;
+}
+
+img {
+  width: 250px;
+  height: 170px;
+  object-fit: cover;
+}
