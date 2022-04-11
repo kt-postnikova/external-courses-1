@@ -1,0 +1,56 @@
+.page {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+  font-size: 14px;
+}
+
+.form__section {
+  width: 900px;
+  margin-bottom: 20px;
+  border: 1px solid #000;
+}
+
+.form__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: 10px;
+  transform: translateY(-50%);
+  width: fit-content;
+  font-weight: 400;
+  font-size: 16px;
+  background: #fff;
+}
+
+.form__question {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.form__section {
+  margin-bottom: 15px;
+}
+
+.form__input {
+  border: 1px solid #C0C0C0;
+}
+
+.form__input_type_short {
+  width: 70px;
+}
+
+.form__select {
+  height: 140px;
+  margin-top: 15px;
+}
+
+.form__textarea {
+  width: 400px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task-02</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="page">
+  <form class="form" method="post" action="http://httpbin.org/post">
+    <div class="form__section">
+      <div class="form__content">
+        <h3 class="form__title">Personal data</h3>
+        <fieldset class="form__question">
+          <label for="surname">Surname
+            <input type="text" class="form__input" id="surname" name="surname">
+          </label>
+        </fieldset>
+        <fieldset class="form__question">
+          <label for="firstName">First Name
+            <input type="text" class="form__input" id="firstName" name="firstName">
+          </label>
+        </fieldset>
+        <fieldset class="form__question">
+          <label for="middleName">Middle Name
+            <input type="text" class="form__input" id="middleName" name="middleName">
+          </label>
+        </fieldset>
+        <fieldset class="form__question">
+          <label>You are</label>
+          <input type="radio" class="form__input" id="male" name="male">
+          <label for="male">male</label>
+          <input type="radio" class="form__input" id="female" name="female">
+          <label for="female">female</label>
+        </fieldset>
+        <fieldset class="form__question">
+          <label for="age">Age</label>
+          <input type="number" class="form__input form__input_type_short" id="age" name="age" min="18" max="101">
+        </fieldset>
+        <fieldset class="form__question">
+          <label for="country">Country of Residence</label>
+          <select class="form__input form__input_type_short" id="country" name="country"></select>
+        </fieldset>
+        <fieldset class="form__question">
+          <label>City</label>
+          <input type="checkbox" class="form__input" id="cityRyazan" name="cityRyazan">
+          <label for="cityRyazan">Ryazan</label>
+          <input type="checkbox" class="form__input" id="cityMoscow" name="cityMoscow">
+          <label for="cityMoscow">Moscow</label>
+        </fieldset>
+        <fieldset class="form__question">
+          <label for="photo">Photography</label>
+          <input type="file" id="photo" name="photo">
+        </fieldset>
+        <fieldset class="form__question">
+          <hr>
+          <label for="country">Title</label>
+          <select multiple class="form__select">
+            <optgroup label="Technologies">
+              <option>Web master</option>
+              <option>Database Administrator</option>
+              <option>Computer-aided design</option>
+            <optgroup label="Finance">
+              <option>Economic Planning</option>
+              <option>Managment accounting</option>
+              <option>Budgeting and planning</option>
+          </select>
+        </fieldset>
+        <fieldset class="form__question">
+          <label for="salary">Salary</label>
+          <input type="range" id="salary" name="salary">
+        </fieldset>
+        <textarea class="form__textarea" placeholder="Tell us about yourself..." rows="10" cols="50"></textarea>
+      </div>
+    </div>
+    <div class="form__section">
+      <div class="form__content">
+        <h3 class="form__title">Contact information</h3>
+        <fieldset class="form__question">
+          <label for="site">Site
+            <input type="url" class="form__input" id="site" name="site">
+          </label>
+        </fieldset>
+        <fieldset class="form__question">
+          <label for="email">Email
+            <input type="email" class="form__input" id="email" name="email">
+          </label>
+        </fieldset>
+        <fieldset class="form__question">
+          <label for="phone">Phone
+            <input type="tel" class="form__input" id="phone" name="phone">
+          </label>
+        </fieldset>
+      </div>
+    </div>
+    <fieldset class="form__question">
+      <label for="password">Password
+        <input type="password" class="form__input" id="password" name="password" required>
+      </label>
+    </fieldset>
+    <button type="submit" formaction="http://httpbin.org/post">Отправить</button>
+    <button type="reset">Сбросить</button>
+  </form>
+</body>
+
+</html>
