@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My library</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+<body class="page">
+  <header class="header">
+    <ul class="links">
+      <li class="links__link">
+        <a>Help Center</a>
+      </li>
+      <li class="links__separator">&#8226;</li>
+      <li class="links__link">
+        <a>Our Support</a>
+      </li>
+      <li>
+        <button class="account-block">
+          <img class="account-block__image" src="./images/user.png">
+          <p class="account-block__name">John Doe</p>
+          <img class="account-block__button" src="./images/accountBtn.svg">
+        </button>
+      </li>
+    </ul>
+  </header>
+  <aside class="aside"></aside>
+  <main class="main"></main>
+  <footer class="footer">
+    <button class="short-button"><img class="short-button__image" src="./images/support.png"
+        alt="Support Button"></button>
+    <button class="short-button short-button_type_setting"><img class="short-button__image" src="./images/setting.png"
+        alt="Setting Button"></button>
+  </footer>
 </body>
+
 </html>

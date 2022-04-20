@@ -1,0 +1,26 @@
+@import url('./assets/fonts/fonts.css');
+
+@import url('./blocks/page/page.css');
+
+@import url('./blocks/header/header.css');
+
+@import url('./blocks/links/links.css');
+@import url('./blocks/links/__link/links__link.css');
+@import url('./blocks/links/__separator/links__separator.css');
+
+@import url('./blocks/account-block/account-block.css');
+@import url('./blocks/account-block/__image/account-block__image.css');
+@import url('./blocks/account-block/__name/account-block__name.css');
+@import url('./blocks/account-block/__button/account-block__button.css');
+
+@import url('./blocks/aside/aside.css');
+
+@import url('./blocks/main/main.css');
+
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/footer/__button/footer__button.css');
+@import url('./blocks/footer/__button/_type/footer__button_type_setting.css');
+
+@import url('./blocks/short-button/short-button.css');
+@import url('./blocks/short-button/_type/short-button_type_setting.css');
+@import url('./blocks/short-button/__image/short-button__image.css');
