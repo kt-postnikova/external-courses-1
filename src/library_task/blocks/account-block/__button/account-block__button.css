@@ -1,8 +1,7 @@
 .account-block__button {
   width: 20px;
   height: 20px;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: transparent;
+  filter: invert();
+  margin-right: 25px;
+  cursor: pointer;
 }
