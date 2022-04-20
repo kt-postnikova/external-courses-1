@@ -1,0 +1,10 @@
+.account-block__image {
+  width: 45px;
+  height: 45px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: aliceblue;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  object-fit: cover;
+}

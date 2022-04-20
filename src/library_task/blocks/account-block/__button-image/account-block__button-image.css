@@ -1,0 +1,6 @@
+.account-block__button-image {
+  width: 20px;
+  height: 20px;
+  filter: invert();
+  margin-right: 25px;
+}
