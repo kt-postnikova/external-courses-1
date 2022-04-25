@@ -21,9 +21,10 @@ function showSlide(currentSlide) {
     index = slides.length - 1;
   }
 
-  sliderBlock.forEach((slide) => {
+  sliderBlock.forEach((item) => {
+    const slide = item;
     slide.style.display = 'none';
-  })
+  });
 
   sliderBlock[index].style.display = 'block';
 }
