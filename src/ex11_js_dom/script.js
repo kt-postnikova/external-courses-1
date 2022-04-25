@@ -9,7 +9,7 @@ const slides = [
   './assets/france.jpg',
   './assets/germany.jpg',
   './assets/states.jpg',
-]
+];
 
 let index = 0;
 
@@ -21,23 +21,22 @@ function showSlide(currentSlide) {
     index = slides.length - 1;
   }
 
-  for (let slide of sliderBlock) {
-    slide.style.display = "none";
-  }
+  sliderBlock.forEach((slide) => {
+    slide.style.display = 'none';
+  })
 
-  sliderBlock[index].style.display = "block";
+  sliderBlock[index].style.display = 'block';
 }
 
-showSlide(index)
+showSlide(index);
 
 function nextSlide() {
   showSlide(index += 1);
 }
 
 function previousSlide() {
-  showSlide(index -= 1)
+  showSlide(index -= 1);
 }
-
 
 rightButton.addEventListener('click', nextSlide);
 
