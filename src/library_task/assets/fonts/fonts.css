@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Font Awesome';
-  src: url('./FontAwesome.otf') format('otf');
+  src: url('./FontAwesome.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('./ProximaNovaRegular.otf') format('otf');
+  src: url('./ProximaNovaRegular.otf') format('opentype');
   font-weight: 400;
 }

@@ -1,10 +1,7 @@
 .account-block {
-  /* width: 150px; */
-  height: 60px;
-  border: none;
-  padding: 0;
-  margin-left: 30px;
-  background-color: #15A4FA;
   display: flex;
   align-items: center;
+  height: 100%;
+  margin-left: 30px;
+  background-color: #15A4FA;
 }
