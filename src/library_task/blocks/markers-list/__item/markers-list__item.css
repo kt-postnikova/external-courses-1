@@ -1,0 +1,21 @@
+.markers-list__item {
+  font-size: 18px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.markers-list__item:nth-of-type(1) {
+  color: #E64C66;
+}
+
+.markers-list__item:nth-of-type(2) {
+  color: #FFAB00;
+}
+
+.markers-list__item:nth-of-type(3) {
+  color: #00BFDD;
+}
+
+.markers-list__item:nth-of-type(4) {
+  color: #7874CF;
+}

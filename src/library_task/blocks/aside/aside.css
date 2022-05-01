@@ -1,0 +1,8 @@
+.aside {
+  position: fixed;
+  top: 55px;
+  left: 0;
+  width: 270px;
+  height: 100%;
+  background-color: #181E2C;
+}

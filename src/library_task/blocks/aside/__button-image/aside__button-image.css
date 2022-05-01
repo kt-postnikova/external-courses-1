@@ -1,0 +1,5 @@
+.aside__button-image {
+  filter: invert();
+  width: 12px;
+  margin-right: 15px;
+}

@@ -1,0 +1,17 @@
+.nav__item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+}
+
+.nav__item:hover {
+  background-color: #15A4FA;
+}
+
+.nav__item:hover .nav__link {
+  color: #fff;
+}
+
+.nav__item:hover .nav__icon {
+  filter: brightness(0) invert(1);
+}
