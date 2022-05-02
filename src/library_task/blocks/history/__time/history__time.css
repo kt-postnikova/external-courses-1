@@ -1,7 +1,7 @@
 .history__time {
   margin: 0;
-  color: #78829D;
-  font-size: 13px;
   grid-column-start: 2;
   grid-column-end: 3;
+  font-size: 13px;
+  color: #78829D;
 }

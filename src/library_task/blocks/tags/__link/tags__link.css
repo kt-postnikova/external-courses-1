@@ -1,0 +1,13 @@
+.tags__link {
+  padding: 5px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'Proxima Nova';
+  color: #8C97B2;
+}
+
+.tags__link:focus {
+  background-color: #97B3CE;
+  border-radius: 20px;
+  color: #fff;
+}

@@ -36,6 +36,32 @@
 
 @import url('./blocks/main/main.css');
 
+@import url('./blocks/section/section.css');
+@import url('./blocks/section/__header/section__header.css');
+@import url('./blocks/section/_type/section_type_books.css');
+@import url('./blocks/section/_place/section_place_books.css');
+
+@import url('./blocks/filter/filter.css');
+
+@import url('./blocks/tags/tags.css');
+@import url('./blocks/tags/__link/tags__link.css');
+
+@import url('./blocks/search/search.css');
+@import url('./blocks/search/__button/search__button.css');
+@import url('./blocks/search/__icon/search__icon.css');
+
+@import url('./blocks/books-list/books-list.css');
+
+@import url('./blocks/book/book.css');
+@import url('./blocks/book/__image/book__image.css');
+@import url('./blocks/book/__title/book__title.css');
+@import url('./blocks/book/__author/book__author.css');
+@import url('./blocks/book/__rate/book__rate.css');
+
+@import url('./blocks/rate/rate.css');
+@import url('./blocks/rate/_type/rate_type_empty.css');
+@import url('./blocks/rate/_type/rate_type_half.css');
+
 @import url('./blocks/footer/footer.css');
 @import url('./blocks/footer/__button/footer__button.css');
 @import url('./blocks/footer/__button/_type/footer__button_type_setting.css');
