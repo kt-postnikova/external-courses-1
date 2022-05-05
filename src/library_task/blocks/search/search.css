@@ -1,0 +1,14 @@
+.search {
+  width: 400px;
+  height: 34px;
+  margin-right: 20px;
+  padding-left: 20px;
+  border-radius: 30px;
+  border: 2px solid #DADFEA;
+  outline: none;
+  font-family: 'Proxima Nova';
+}
+
+.search::placeholder {
+  color: #8C97B2;
+}

@@ -11,25 +11,217 @@
 
 <body class="page">
   <header class="header">
-    <ul class="links">
-      <li class="links__link">
-        <a>Help Center</a>
-      </li>
-      <li class="links__separator">&#8226;</li>
-      <li class="links__link">
-        <a>Our Support</a>
-      </li>
-      <li>
-        <button class="account-block">
-          <img class="account-block__image" src="./images/user.png">
-          <p class="account-block__name">John Doe</p>
-          <img class="account-block__button" src="./images/accountBtn.svg">
-        </button>
-      </li>
-    </ul>
+    <div class="links">
+      <a class="links__link" href="#">Help Center</a>
+      <span class="links__separator">&#8226;</span>
+      <a class="links__link" href="#">Our Support</a>
+      <div class="account-block">
+        <img class="account-block__image" src="./images/user.png">
+        <p class="account-block__name">John Doe</p>
+        <button class="account-block__button" type="button"></button>
+      </div>
+    </div>
   </header>
-  <aside class="aside"></aside>
-  <main class="main"></main>
+  <aside class="aside">
+    <div class="aside__section">
+      <button class="aside__button"><img class="aside__button-image" src="./images/addBtn.svg">add a book</button>
+    </div>
+    <div class="aside__section">
+      <ul class="nav">
+        <li class="nav__item">
+          <img class="nav__icon" src="./images/reading.svg" alt="Now Reading Icon">
+          <a class="nav__link" href="#">Now Reading</a>
+        </li>
+        <li class="nav__item">
+          <img class="nav__icon" src="./images/browse.svg" alt="Browse Icon">
+          <a class="nav__link" href="#">Browse</a>
+        </li>
+        <li class="nav__item">
+          <img class="nav__icon" src="./images/buy.svg" alt="Buy Books Icon">
+          <a class="nav__link" href="#">Buy Books</a>
+        </li>
+        <li class="nav__item">
+          <img class="nav__icon" src="./images/favourite.svg" alt="Favourite Books Icon">
+          <a class="nav__link" href="#">Favourite Books</a>
+        </li>
+        <li class="nav__item">
+          <img class="nav__icon" src="./images/wishlist.svg" alt="Wishlist Icon">
+          <a class="nav__link" href="#">Wishlist</a>
+        </li>
+        <li class="nav__item">
+          <img class="nav__icon" src="./images/history.svg" alt="History Icon">
+          <a class="nav__link" href="#">History</a>
+        </li>
+      </ul>
+    </div>
+    <div class="aside__section">
+      <ul class="markers-list">
+        <li class="markers-list__item"><a class="markers-list__marker" href="#">Must Read Titles</a></li>
+        <li class="markers-list__item"><a class="markers-list__marker" href="#">Best Of List</a></li>
+        <li class="markers-list__item"><a class="markers-list__marker" href="#">Classic Novels</a></li>
+        <li class="markers-list__item"><a class="markers-list__marker" href="#">Non Fiction</a></li>
+      </ul>
+    </div>
+    <div class="aside__section">
+      <div class="history">
+        <div class="history__block">
+          <img class="history__icon" src="./images/history.svg">
+          <p class="history__text">You added <span class="history__insert">Fight Club</span> by <span
+              class="history__insert">Chuck Palahniuk</span> to your <span class="history__insert">Must Read
+              Titles</span></p>
+          <p class="history__time">24 minutes ago</p>
+        </div>
+        <div class="history__block">
+          <img class="history__icon" src="./images/history.svg">
+          <p class="history__text">You added <span class="history__insert">The Trial</span> by<span
+              class="history__insert"> Franz Kafka</span> to your<span class="history__insert"> Must Read
+              Titles</span></p>
+          <p class="history__time">48 minutes ago</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <main class="main">
+    <section class="section">
+      <h1 class="section__header">Browse Available Books</h1>
+    </section>
+    <section class="section">
+      <div class="filter">
+        <ul class="tags">
+          <li><a class="tags__link" href="#">All Books</a></li>
+          <li><a class="tags__link" href="#">Most Recent</a></li>
+          <li><a class="tags__link" href="#">Most Popular</a></li>
+          <li><a class="tags__link" href="#">Free Books</a></li>
+        </ul>
+        <input class="search" type="text" placeholder="Enter Keywords">
+        <button class="search__button"><img class="search__icon" src="./images/search.svg"></button>
+      </div>
+    </section>
+    <section class="section section_place_books">
+      <div class="books-list">
+        <div class="book">
+          <img class="book__image" src="./images/books/nizam.jpg">
+          <h2 class="book__title">Jewels of Nizam</h2>
+          <h3 class="book__author">by Geeta Devi</h3>
+          <div class="book__rate">
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+          </div>
+        </div>
+        <div class="book">
+          <img class="book__image" src="./images/books/cakes-bakes.jpg">
+          <h2 class="book__title">Cakes & Bakes</h2>
+          <h3 class="book__author">by Sanjeev Kapoor</h3>
+          <div class="book__rate">
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+          </div>
+        </div>
+        <div class="book">
+          <img class="book__image" src="./images/books/jamie.jpg">
+          <h2 class="book__title">Jamie's Kitchen</h2>
+          <h3 class="book__author">by Jamie Oliver</h3>
+          <div class="book__rate">
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate rate_type_empty"></div>
+          </div>
+        </div>
+        <div class="book">
+          <img class="book__image" src="./images/books/easy.jpeg">
+          <h2 class="book__title">Inexpensive Family Meals</h2>
+          <h3 class="book__author">by Simon Holst</h3>
+          <div class="book__rate">
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate rate_type_half"></div>
+          </div>
+        </div>
+        <div class="book">
+          <img class="book__image" src="./images/books/paloe.jpg">
+          <h2 class="book__title">Paleo Slow Cooking</h2>
+          <h3 class="book__author">by Chrissy Gower</h3>
+          <div class="book__rate">
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate rate_type_empty"></div>
+          </div>
+        </div>
+        <div class="book">
+          <img class="book__image" src="./images/books/italian.jpg">
+          <h2 class="book__title">Cook Like an Italian</h2>
+          <h3 class="book__author">by Tobie Puttock</h3>
+          <div class="book__rate">
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate rate_type_half"></div>
+          </div>
+        </div>
+        <div class="book">
+          <img class="book__image" src="./images/books/indian.jpg">
+          <h2 class="book__title">Suneeta Vaswani</h2>
+          <h3 class="book__author">by Geeta Devi</h3>
+          <div class="book__rate">
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+          </div>
+        </div>
+        <div class="book">
+          <img class="book__image" src="./images/books/ministry.jpg">
+          <h2 class="book__title">Ministry of Food</h2>
+          <h3 class="book__author">by Jamie Oliver</h3>
+          <div class="book__rate">
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate rate_type_empty"></div>
+          </div>
+        </div>
+        <div class="book">
+          <img class="book__image" src="./images/books/jamiesItaly.jpg">
+          <h2 class="book__title">Jamie's Italy</h2>
+          <h3 class="book__author">by Jamie Oliver</h3>
+          <div class="book__rate">
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate rate_type_half"></div>
+          </div>
+        </div>
+        <div class="book">
+          <img class="book__image" src="./images/books/vegetables.jpg">
+          <h2 class="book__title">Vegetables Cookbook</h2>
+          <h3 class="book__author">by Methew Biggs</h3>
+          <div class="book__rate">
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate"></div>
+            <div class="rate rate_type_half"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer class="footer">
     <button class="short-button"><img class="short-button__image" src="./images/support.png"
         alt="Support Button"></button>

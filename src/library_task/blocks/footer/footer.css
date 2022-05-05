@@ -4,7 +4,7 @@
   left: 0;
   display: flex;
   justify-content: flex-end;
-  background-color: #181E2C;
   width: 100%;
-  height: 60px;
+  height: 45px;
+  background-color: #181E2C;
 }

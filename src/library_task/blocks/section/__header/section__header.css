@@ -1,0 +1,9 @@
+.section__header {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Proxima Nova';
+  color: #444C63;
+}
