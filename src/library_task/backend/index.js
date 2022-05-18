@@ -1,7 +1,7 @@
-const express = require('express');
-const cors = require('cors');
+const express = require('express.js');
+const cors = require('cors.js');
 const uuid = require('uuid');
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser.js');
 
 const books = require('./db.js');
 
@@ -13,7 +13,7 @@ app.use(cors());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text({ type: "*/*" }));
+app.use(bodyParser.text({ type: '*/*' }));
 
 app.get('/books', (req, res) => {
   res.send(books);
@@ -30,11 +30,11 @@ app.post('/books', (req, res) => {
 app.put('/books/rating/:bookId', (req, res) => {
   const { bookId } = req.params;
   const bookRating = Number(req.body);
-  const foundedBook = books.find(book => book.id === bookId);
+  const foundedBook = books.find((book) => book.id === bookId);
   foundedBook.rating = bookRating;
   res.send(foundedBook);
-})
+});
 
 app.listen(PORT, () => {
   console.log(`App's listening on PORT: ${PORT}`);
-})
+});

@@ -71,6 +71,6 @@ const books = [
     image: 'images/books/vegetables.jpg',
     rating: 0,
   },
-]
+];
 
 module.exports = books;
