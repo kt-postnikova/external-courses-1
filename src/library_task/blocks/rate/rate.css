@@ -1,9 +1,17 @@
 .rate {
-  background-image: url('../../images/starRate.svg');
   background-repeat: no-repeat;
   background-size: 16px;
   background-position: center;
   width: 16px;
   height: 16px;
   margin-right: 2px;
+  cursor: pointer;
 }
+
+/* .rate:hover {
+  background-image: url('../../images/starRate.svg');
+}
+
+.rate:hover~.rate {
+  background-image: url('../../images/starRate.svg');
+} */
