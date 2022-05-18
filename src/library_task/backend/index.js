@@ -1,9 +1,9 @@
-const express = require('express');
-const cors = require('cors');
-const uuid = require('uuid');
-const bodyParser = require('body-parser');
+import express from 'express';
+import cors from 'cors';
+import { v4 } from 'uuid';
+import bodyParser from 'body-parser';
 
-const books = require('./db.js');
+import { books } from './db.js';
 
 const { PORT = 3000 } = process.env;
 
@@ -21,7 +21,7 @@ app.get('/books', (req, res) => {
 
 app.post('/books', (req, res) => {
   const newBook = req.body;
-  newBook.id = uuid.v4();
+  newBook.id = v4();
   newBook.rating = 0;
   books.push(newBook);
   res.send(newBook);
