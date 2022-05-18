@@ -1,6 +1,25 @@
 import {
-  bookTemplate, booksContainer, addBookBtn, addBookPopup, addBookForm, searchInput, tagPopular, tagAllBooks, addBookPopupClose
+  bookTemplate,
+  booksContainer,
+  addBookBtn,
+  addBookPopup,
+  addBookForm,
+  searchInput,
+  tagPopular,
+  tagAllBooks,
+  addBookPopupClose,
 } from './constants.js';
+
+function removeBooks() {
+  document.querySelectorAll('.book').forEach((book) => {
+    book.remove();
+  });
+}
+
+function getBooks() {
+  return fetch('http://localhost:3000/books')
+    .then((res) => res.json());
+}
 
 function generateBook(booksData) {
   booksData.map((book) => {
@@ -71,22 +90,12 @@ function searchBooks() {
   const api = getBooks();
   api.then((books) => {
     const foundedBooks = books.filter((book) =>
-      book.title.toLowerCase().includes(searchInput.value.toLowerCase()) ||
-      book.author.toLowerCase().includes(searchInput.value.toLowerCase()));
+      book.title.toLowerCase().includes(searchInput.value.toLowerCase())
+      || book.author.toLowerCase().includes(searchInput.value.toLowerCase()));
     generateBook(foundedBooks);
   });
 }
 
-function removeBooks() {
-  document.querySelectorAll('.book').forEach((book) => {
-    book.remove();
-  });
-}
-
-function getBooks() {
-  return fetch('http://localhost:3000/books')
-    .then((res) => res.json());
-}
 
 function openPopup(popup) {
   const popupElement = popup;

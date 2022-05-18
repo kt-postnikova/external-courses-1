@@ -1,7 +1,7 @@
-const express = require('express.js');
-const cors = require('cors.js');
+const express = require('express');
+const cors = require('cors');
 const uuid = require('uuid');
-const bodyParser = require('body-parser.js');
+const bodyParser = require('body-parser');
 
 const books = require('./db.js');
 
