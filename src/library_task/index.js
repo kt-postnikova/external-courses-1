@@ -89,8 +89,10 @@ function searchBooks() {
   removeBooks();
   const api = getBooks();
   api.then((books) => {
-    const foundedBooks = books.filter((book) => book.title.toLowerCase().includes(searchInput.value.toLowerCase())
-      || book.author.toLowerCase().includes(searchInput.value.toLowerCase()));
+    const foundedBooks = books.filter(
+      (book) => book.title.toLowerCase().includes(searchInput.value.toLowerCase())
+        || book.author.toLowerCase().includes(searchInput.value.toLowerCase()),
+    );
     generateBook(foundedBooks);
   });
 }
