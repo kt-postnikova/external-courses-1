@@ -1,0 +1,16 @@
+.form__input {
+  font-family: 'Proxima Nova';
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid rgb(90, 90, 90);
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.form__input::placeholder {
+  text-transform: uppercase;
+  font-size: 10px;
+}
