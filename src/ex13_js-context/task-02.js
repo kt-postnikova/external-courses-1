@@ -63,5 +63,5 @@ function Hangman(word) {
   };
 }
 
-const hangman = Hangman();
+const hangman = new Hangman();
 module.exports = hangman;
